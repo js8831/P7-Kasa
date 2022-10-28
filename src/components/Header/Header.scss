@@ -1,0 +1,60 @@
+@import './../../assets/scss/variables.scss';
+
+.header {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* @include breakpoint(m) {
+        margin: 0 0 1rem 0;
+    } */
+
+    &__logo {
+        .logo {
+            max-width: 100px;
+
+            /*  @include breakpoint(m) {
+                max-width: 140px;
+            }
+
+            @include breakpoint(xxl) {
+                max-width: 150px;
+            } */
+        }
+    }
+
+    &__nav {
+        .nav-link {
+            margin-left: 1rem;
+            font-size: 1rem;
+            color: $color-primary;
+            position: relative;
+
+            /* @include breakpoint(m) {
+                font-size: 1.5rem;
+                margin-left: 3rem;
+            } */
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $color-primary;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+}

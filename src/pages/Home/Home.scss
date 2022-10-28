@@ -1,0 +1,39 @@
+@import './../../assets/scss/variables.scss';
+
+.main {
+    /* position: relative; */
+    margin: 43px 100px;
+    padding: 26px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color-secondary;
+    border-radius: 10px;
+
+    /* @include breakpoint(l) {
+        border-radius: $border-radius-lg;
+        background-color: $background-tiles;
+        margin: 1.5rem 0;
+        padding: 0.5rem 1rem 1rem 1rem;
+        width: calc(100% - 2rem);
+    } */
+
+    .article-link {
+        border-radius: 10px;
+        margin: 1rem 0 0 0;
+        width: 100%;
+
+        /*  @include breakpoint(l) {
+            border-radius: $border-radius-lg;
+            margin: 1rem 0 0 0;
+            padding: 0 1rem 0 1rem;
+            width: calc(50% - 2.5rem);
+        }
+        @include breakpoint(xxl) {
+            border-radius: $border-radius-lg;
+            margin: 1rem 0 0 0;
+            padding: 0 0.75rem 0 0.75rem;
+            width: calc(33.33333% - 1.5rem);
+        } */
+    }
+}

@@ -1,0 +1,43 @@
+@import './../../assets/scss/variables.scss';
+
+.article {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin: 25px 30px;
+    display: flex;
+    align-items: flex-end;
+
+    /*  @media (min-width: 768px) {
+        min-height: 255px;
+    } */
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    &__title {
+        padding: 1.5rem 2rem 1.5rem 1rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        color: $font-color-light;
+        border-radius: 0 0 $border-radius-s $border-radius-s;
+        font-weight: bold;
+    }
+
+    .text {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    align-items: center;
+    margin: 10rem 0 0 0;
+
+    &__logo {
+        padding: 2rem 0 0 0;
+
+        .logo {
+            max-width: 122px;
+        }
+    }
+
+    &__mentions {
+        padding: 0.5rem 0 2rem 0;
+        font-size: 0.8rem;
+
+        /*  @include breakpoint(m) {
+            padding: 1rem 0 2rem 0;
+            font-size: 1rem;
+        } */
+    }
+}
