@@ -1,0 +1,45 @@
+@import "../../assets/scss/variables.scss";
+
+.wrapper-error {
+    margin-top: 2rem;
+
+    color: $color-primary;
+    width: 100%;
+    text-align: center;
+    padding: 10rem 0;
+
+    /* @include breakpoint(xl) {
+        margin-top: 4rem;
+    } */
+
+    &__number {
+        font-weight: bold;
+        font-size: 5rem;
+
+        /* @include breakpoint(xl) {
+            font-size: 8rem;
+        } */
+    }
+
+    &__msg {
+        margin: 1rem 0 5rem 0;
+        font-weight: 500;
+
+        /* @include breakpoint(xl) {
+            margin: 1rem 0 5rem 0;
+            font-size: 1.5rem;
+        } */
+    }
+
+    &__back-link {
+        text-decoration: underline;
+        color: $color-primary;
+
+        &:hover,
+        &:focus,
+        &:visited {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
+}
