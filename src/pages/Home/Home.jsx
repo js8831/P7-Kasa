@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner";
 import ApartmentCard from "../../components/ApartmentCard/ApartmentCard";
 import data from "../../assets/data/data.json";
 import bannerImg from "../../assets/img/bannerImg.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const bannerTitle = "Chez vous, partout et ailleurs";
@@ -14,7 +15,15 @@ export default function Home() {
           /* le spread operator pour récup toutes les données des appart. */
           /* keys car ... */
           /* return car ... */
-          return <ApartmentCard {...apartment} key={apartment.id} />;
+          return (
+            <Link
+              to={`/apartment/${apartment.id}`}
+              key={apartment.id}
+              title={apartment.title}
+            >
+              <ApartmentCard {...apartment} />
+            </Link>
+          );
         })}
       </main>
     </div>
