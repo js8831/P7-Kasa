@@ -1,0 +1,76 @@
+@import './../../assets/scss/variables.scss';
+@import './../../assets/scss/mixins.scss';
+
+.apartment {
+    margin: 0 5%;
+    color: $color-primary;
+
+    &__content {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+
+        /* @include media-query(s) {
+            font-size: 24px;
+        }
+
+        @include media-query(m) {
+            font-size: 30px;
+        }
+
+        @include media-query(l) {
+            font-size: 36px;
+        } */
+    }
+
+    &__location {
+        font-size: 14px;
+        font-weight: 500;
+
+        /*  @include media-query(s) {
+            font-size: 16px;
+        }
+
+        @include media-query(m) {
+            margin-top: 0;
+        }
+
+        @include media-query(l) {
+            font-size: 18px;
+        } */
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__rating-and-host {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    /* &__dropdowns {
+        @include media-query(m) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 40px;
+        }
+
+        @include media-query(l) {
+            column-gap: 80px;
+        }
+    } */
+}

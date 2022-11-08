@@ -1,0 +1,19 @@
+@import './../../assets/scss/variables.scss';
+@import './../../assets/scss/mixins.scss';
+
+.rating {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-right: 5px;
+
+        @include media-query(m) {
+            height: 24px;
+        }
+
+        @include media-query(l) {
+            height: 30px;
+        }
+    }
+}

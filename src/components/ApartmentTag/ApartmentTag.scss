@@ -1,0 +1,36 @@
+@import "./../../assets/scss/variables.scss";
+
+.tag {
+    background: $color-primary;
+    border-radius: 5px;
+    color: $color-secondary;
+    padding: 3px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 68px;
+    text-align: center;
+
+    /* @include media-query(small) {
+        padding: 4px 12px;
+        border-radius: 7px;
+    }
+
+    @include media-query(large) {
+        padding: 5px 14px;
+        border-radius: 10px;
+    } */
+
+    &__text {
+        margin: 0;
+        font-size: 10px;
+        font-weight: 500;
+
+        /* @include media-query(small) {
+            font-size: 12px;
+        }
+
+        @include media-query(large) {
+            font-size: 14px;
+        } */
+    }
+}

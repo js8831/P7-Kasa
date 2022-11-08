@@ -1,0 +1,103 @@
+.slider {
+    position: relative;
+
+    &__active-picture {
+        height: 255px;
+        width: 100%;
+        /* transform: scale(1);
+        transition: transform 300ms; */
+
+        /*   @include media-query(small) {
+            height: 295px;
+        }
+
+        @include media-query(medium) {
+            height: 335px;
+        }
+
+        @include media-query(large) {
+            height: 375px;
+        }
+
+        @include media-query(xlarge) {
+            height: 415px;
+        } */
+    }
+
+    /* &__inactive-picture {
+        transform: scale(1.05);
+        transition: transform 300ms;
+    } */
+
+    &__picture {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        border-radius: 10px;
+
+        /*  @include media-query(small) {
+            border-radius: 15px;
+        }
+
+        @include media-query(medium) {
+            border-radius: 20px;
+        }
+
+        @include media-query(large) {
+            border-radius: 25px;
+        } */
+    }
+
+    &__previous,
+    &__next {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__next {
+        right: 0;
+    }
+
+    &__next-icon {
+        margin-right: 5px;
+    }
+
+    &__previous-icon {
+        margin-left: 5px;
+    }
+
+    &__next-icon,
+    &__previous-icon {
+        height: 16px;
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+
+        /*  @include media-query(small) {
+            height: 27px;
+        }
+
+        @include media-query(medium) {
+            height: 38px;
+        }
+
+        @include media-query(large) {
+            height: 50px;
+        } */
+    }
+
+    &__counter {
+        display: none;
+
+        /* @include media-query(large) {
+            display: block;
+            color: $white;
+            position: absolute;
+            bottom: 25px;
+            font-weight: 500;
+            left: 50%;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+        } */
+    }
+}
