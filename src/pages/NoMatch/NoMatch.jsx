@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./NoMatch.scss";
 
-export default function NoMatch() {
+function NoMatch() {
   return (
     <div className="wrapper-error">
       <div className="wrapper-error__number">404</div>
@@ -18,3 +18,5 @@ export default function NoMatch() {
     </div>
   );
 }
+
+export default NoMatch;

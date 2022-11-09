@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 import Logo from "../Logo/Logo";
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="footer">
       <Link className="footer__logo" to="/">
@@ -13,3 +13,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

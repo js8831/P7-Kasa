@@ -1,10 +1,9 @@
 import "./HostName.scss";
 
-export default function HostName({ host }) {
+function HostName({ host }) {
   const hostSplitName = host.name.split(" ");
   //  ????? Dans l'array hostSplitName il y a deux string, le premier sera le name et l'autre le lastname
   const [name, lastname] = hostSplitName;
-  console.log(hostSplitName);
 
   return (
     <div className="host">
@@ -17,3 +16,5 @@ export default function HostName({ host }) {
     </div>
   );
 }
+
+export default HostName;

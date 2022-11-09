@@ -3,7 +3,7 @@ import "./Header.scss";
 
 import Logo from "../Logo/Logo";
 
-export default function Header() {
+function Header() {
   return (
     <header className="header">
       <Link className="header__logo" to="/">
@@ -22,3 +22,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

@@ -3,7 +3,7 @@ import greystar from "../../assets/img/greyStar.svg";
 
 import "./Rate.scss";
 
-export default function Rate(props) {
+function Rate(props) {
   const rating = props.rating;
   const stars = [1, 2, 3, 4, 5];
   return (
@@ -30,3 +30,5 @@ export default function Rate(props) {
     </div>
   );
 }
+
+export default Rate;

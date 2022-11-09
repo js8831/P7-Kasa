@@ -10,7 +10,7 @@ import arrowLeft from "../../assets/img/arrowLeft.svg";
 import arrowRight from "../../assets/img/arrowRight.svg";
 
 // Composant fonction (enfant) "Slider" que l'on exporte dans le composant (parent) Apartment qui est une page à part entière
-export default function Slider({ props }) {
+function Slider({ props }) {
   // Création du state "current" qu'on initialise à 0 et déclaration de la fct qui met à jour ce state
   const [current, updateCurrent] = useState(0);
 
@@ -65,3 +65,5 @@ export default function Slider({ props }) {
     </div>
   );
 }
+
+export default Slider;

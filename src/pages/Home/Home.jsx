@@ -5,7 +5,7 @@ import data from "../../assets/data/data.json";
 import bannerImg from "../../assets/img/bannerImg.jpeg";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+function Home() {
   const bannerTitle = "Chez vous, partout et ailleurs";
   return (
     <div>
@@ -29,3 +29,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

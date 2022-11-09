@@ -1,4 +1,4 @@
-export default function Logo({ fill, className }) {
+function Logo({ fill, className }) {
   return (
     <svg
       width="211"
@@ -31,3 +31,5 @@ export default function Logo({ fill, className }) {
     </svg>
   );
 }
+
+export default Logo;

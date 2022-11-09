@@ -1,6 +1,6 @@
 import "./Banner.scss";
 
-export default function Banner({ title, picture }) {
+function Banner({ title, picture }) {
   return (
     <div className="wrapper-banner">
       <img className="wrapper-banner__img" src={picture} alt="" />
@@ -8,3 +8,5 @@ export default function Banner({ title, picture }) {
     </div>
   );
 }
+
+export default Banner;
