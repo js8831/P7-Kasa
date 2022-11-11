@@ -42,7 +42,11 @@ function Slider({ props }) {
           >
             {/* Contenu de la div : on mappe et affiche la photo dont l'index correspond à "current" */}
             {index === current && (
-              <img src={picture} alt="" className="slider__picture" />
+              <img
+                src={picture}
+                alt="Appartement"
+                className="slider__picture"
+              />
             )}
           </div>
         );
