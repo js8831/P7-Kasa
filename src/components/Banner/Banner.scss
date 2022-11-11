@@ -3,16 +3,24 @@
 .wrapper-banner {
   position: relative;
   margin: 0px 100px;
-  
+
   @media (max-width: 768px) {
     margin: 0 20px;
   }
 
   &__img {
     width: 100%;
-    height: 110px;
+    height: 223px;
     object-fit: cover;
     border-radius: $border-radius-s;
+
+    @media (max-width: 992px) {
+      height: 170px;
+    }
+
+    @media (max-width: 768px) {
+      height: 110px;
+    }
   }
 
   &__background {
@@ -20,9 +28,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 110px;
+    height: 223px;
     border-radius: $border-radius-s;
     background-color: rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 992px) {
+      height: 170px;
+    }
+
+    @media (max-width: 768px) {
+      height: 110px;
+    }
   }
 
   &__title {
@@ -31,9 +47,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: $font-color-light;
+    font-size: 48px;
+
+    @media (max-width: 1200px) {
+      font-size: 30px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 24px;
+      padding-right: 10px;
+    }
+
     @media (max-width: 768px) {
-      padding-right: 75px;
       left: 40%;
+      padding-right: 10px;
+      font-size: 24px;
     }
   }
 }
