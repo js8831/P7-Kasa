@@ -1,11 +1,15 @@
 @import "./../../assets/style/variables.scss";
 
 .header {
-  margin: 0 5%;
+  margin: 0 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
 
   &__logo {
     .logo {

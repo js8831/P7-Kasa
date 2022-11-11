@@ -8,7 +8,17 @@
     background-color: $color-primary;
     border-radius: 7px;
     color: white;
-    padding: 10px;
+    height : 52px;
+    padding:0 10px ;
+    border-radius: $border-radius-s;
+
+    @media (max-width: 992px) {
+      height : 40px;
+    }
+
+    @media (max-width: 768px) {
+      height : 30px;
+    }
 
     &--margin {
       margin-bottom: 31px;
@@ -37,7 +47,7 @@
     background-color: $color-secondary;
     border-radius: 7px;
     padding: 20px 20px 35px 20px;
-    max-height: 100%;
+/*     max-height: 100%; */
     margin-bottom: 31px;
     font-size: 18px;
     @media (max-width: 768px) {

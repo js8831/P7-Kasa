@@ -1,8 +1,12 @@
 @import "./../../assets/style/variables.scss";
 
 .apartment {
-  margin: 0 5%;
+  margin: 0 100px;
   color: $color-primary;
+
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
 
   &__content {
     margin-top: 10px;

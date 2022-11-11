@@ -8,7 +8,9 @@ function Banner({ title, picture }) {
         src={picture}
         alt="Paysage montagneux"
       />
-      <div className="wrapper-banner__title">{title}</div>
+      <div className="wrapper-banner__background">
+        <div className="wrapper-banner__title">{title}</div>
+      </div>
     </div>
   );
 }
