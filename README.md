@@ -1,4 +1,4 @@
-Le projet 7 : développer une application web avec React et React Router.
+__Le projet 7 : développer une application web avec React et React Router__
 
 ![Cover](https://github.com/js8831/P7-Kasa/blob/main/src/assets/img/aboutbannerDesktop.png)
 
