@@ -1,3 +1,9 @@
+Le projet 7 : développer une application Web avec React et React Router.
+
+![Cover](https://github.com/js8831/P7-Kasa/blob/main/src/assets/img/aboutbannerDesktop.png)
+
+Kasa vous recrute en tant que développeur Front-end en freelance pour développer leur nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
