@@ -1,42 +1,42 @@
 .host {
+  display: flex;
+  justify-content: flex-end;
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
 
-    &__name {
-        font-size: 12px;
-        font-weight: 500;
-        margin-right: 10px;
-
-        /* @include media-query(m) {
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        @include media-query(l) {
-            font-size: 18px;
-        } */
+    @media (max-width: 992px) {
+      font-size: 15px;
     }
 
-    &__name p {
-        margin: 0;
-        text-align: end;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__name p {
+    margin: 0;
+    text-align: end;
+  }
+
+  &__picture {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+
+    @media (max-width: 992px) {
+      height: 48px;
+      width: 48px;
     }
 
-    &__picture {
-        border-radius: 50%;
-        height: 32px;
-        width: 32px;
-
-        /* @include media-query(m) {
-            height: 48px;
-            width: 48px;
-        }
-
-        @include media-query(l) {
-            height: 64px;
-            width: 64px;
-        } */
+    @media (max-width: 768px) {
+      height: 32px;
+      width: 32px;
     }
+  }
 }

@@ -1,78 +1,65 @@
-@import './../../assets/style/variables.scss';
+@import "./../../assets/style/variables.scss";
 
 .apartment {
-    margin: 0 5%;
-    color: $color-primary;
+  margin: 0 5%;
+  color: $color-primary;
 
-    &__content {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
+  &__content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  &__location {
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+  }
+
+  &__rating-and-host {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    @media (max-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__dropdowns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
     }
 
-    &__title {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 500;
-
-        /* @include media-query(s) {
-            font-size: 24px;
-        }
-
-        @include media-query(m) {
-            font-size: 30px;
-        }
-
-        @include media-query(l) {
-            font-size: 36px;
-        } */
+    @media (max-width: 992px) {
+      column-gap: 40px;
     }
-
-    &__location {
-        font-size: 14px;
-        font-weight: 500;
-
-        /*  @include media-query(s) {
-            font-size: 16px;
-        }
-
-        @include media-query(m) {
-            margin-top: 0;
-        }
-
-        @include media-query(l) {
-            font-size: 18px;
-        } */
+    &__list {
+      padding-bottom: 5px;
     }
-
-    &__tags {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__rating-and-host {
-        margin-top: 5px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        margin: 0;
-    }
-
-    &__dropdowns {
-       /*  @include media-query(m) {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 40px;
-        }
-
-        @include media-query(l) {
-            column-gap: 80px;
-        } */
-        &__list {
-            padding-bottom: 5px;
-        }
-    }
+  }
 }

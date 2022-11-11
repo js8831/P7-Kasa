@@ -1,82 +1,62 @@
-@import './../../assets/style/variables.scss';
+@import "./../../assets/style/variables.scss";
 
 .slider {
-    position: relative;
+  position: relative;
 
-    &__active-picture {
-        height: 255px;
-        width: 100%;
+  &__active-picture {
+    height: 415px;
+    width: 100%;
 
-        /*   @include media-query(small) {
-            height: 295px;
-        }
-
-        @include media-query(medium) {
-            height: 335px;
-        }
-
-        @include media-query(large) {
-            height: 375px;
-        }
-
-        @include media-query(xlarge) {
-            height: 415px;
-        } */
+    @media (max-width: 1200px) {
+      height: 300px;
     }
 
-    &__picture {
-        width: inherit;
-        height: inherit;
-        object-fit: cover;
-        border-radius: $border-radius-s;
+    @media (max-width: 992px) {
+      height: 255px;
+    }
+  }
 
-        /*  @include media-query(small) {
-            border-radius: 15px;
-        }
+  &__picture {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: $border-radius-lg;
 
-        @include media-query(medium) {
-            border-radius: 20px;
-        }
+    @media (max-width: 768px) {
+      border-radius: $border-radius-xs;
+    }
+  }
 
-        @include media-query(large) {
-            border-radius: 25px;
-        } */
+  &__previous,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__next-icon {
+    margin-right: 5px;
+  }
+
+  &__previous-icon {
+    margin-left: 5px;
+  }
+
+  &__next-icon,
+  &__previous-icon {
+    height: 50px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+
+    @media (max-width: 992px) {
+      height: 30px;
     }
 
-    &__previous,
-    &__next {
-        position: absolute;
-        top: 50%;
-        transform: translate(0% ,-50%);
+    @media (max-width: 768px) {
+      height: 16px;
     }
-
-    &__next {
-        right: 0;
-    }
-
-    &__next-icon {
-        margin-right: 5px;
-    }
-
-    &__previous-icon {
-        margin-left: 5px;
-    }
-
-    &__next-icon,
-    &__previous-icon {
-        height: 16px;
-        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
-
-        /*  @include media-query(small) {
-            height: 27px;
-        }
-
-        @include media-query(medium) {
-            height: 38px;
-        }
-
-        @include media-query(large) {
-            height: 50px;
-        } */
-    }
+  }
 }

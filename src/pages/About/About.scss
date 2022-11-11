@@ -1,9 +1,14 @@
-@import './../../assets/style/variables.scss';
+@import "./../../assets/style/variables.scss";
 
 .about {
-    &__dropdowns {
-        margin: 31px auto;
-        width: 80%;
-        color: $color-primary;
+  &__dropdowns {
+    margin: 30px auto;
+    width: 80%;
+    color: $color-primary;
+
+    @media (max-width: 768px) {
+        margin:5%;
+        width: calc(100% - 10%)
     }
+  }
 }
