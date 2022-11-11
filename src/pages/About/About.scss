@@ -3,12 +3,15 @@
 .about {
   &__dropdowns {
     margin: 30px auto;
-    width: 80%;
+    width: calc(80% - 10%);
     color: $color-primary;
 
+    @media (max-width: 992px) {
+      width: calc(80% - 15%);
+    }
+
     @media (max-width: 768px) {
-        margin:5%;
-        width: calc(100% - 10%)
+      width: calc(100% - 40px);
     }
   }
 }
