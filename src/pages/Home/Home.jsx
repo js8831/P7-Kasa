@@ -17,6 +17,7 @@ function Home() {
           /* return car ... */
           return (
             <Link
+              className="main__link"
               to={`/apartment/${apartment.id}`}
               key={apartment.id}
               title={apartment.title}

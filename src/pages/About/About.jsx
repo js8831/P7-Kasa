@@ -10,30 +10,9 @@ function About() {
     <div className="about">
       <Banner picture={imgBanner} />
       <div className="about__dropdowns">
-        <Collapse
-          title="Fiabilité"
-          content={aboutData.map((data) => {
-            return data.fiability;
-          })}
-        />
-        <Collapse
-          title="Respect"
-          content={aboutData.map((data) => {
-            return data.respect;
-          })}
-        />
-        <Collapse
-          title="Service"
-          content={aboutData.map((data) => {
-            return data.service;
-          })}
-        />
-        <Collapse
-          title="Sécurité"
-          content={aboutData.map((data) => {
-            return data.security;
-          })}
-        />
+        {aboutData.map((data) => {
+          return <Collapse title={data.title} content={data.content} />;
+        })}
       </div>
     </div>
   );
