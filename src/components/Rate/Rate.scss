@@ -1,5 +1,4 @@
 @import './../../assets/style/variables.scss';
-@import './../../assets/style/mixins.scss';
 
 .rating {
     display: flex;
@@ -8,12 +7,12 @@
     &__icon {
         margin-right: 5px;
 
-        @include media-query(m) {
+        /* @include media-query(m) {
             height: 24px;
         }
 
         @include media-query(l) {
             height: 30px;
-        }
+        } */
     }
 }
