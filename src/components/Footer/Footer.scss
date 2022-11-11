@@ -1,7 +1,10 @@
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
+
 .footer {
     position: relative;
     width: 100%;
-    background-color: #000;
+    background-color: $color-tertiary;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

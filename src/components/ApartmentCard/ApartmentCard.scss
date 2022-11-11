@@ -1,4 +1,5 @@
-@import './../../assets/scss/variables.scss';
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
 
 .article {
     position: relative;
@@ -13,31 +14,28 @@
     } */
 
     &__image {
+        // Positionnement par-dessus le relative
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 10px;
+        border-radius: $border-radius-s;
+        // Pour couvrir le contenant
         object-fit: cover;
+        // Pour centrer
         object-position: center center;
     }
 
     &__title {
         padding: 1.5rem 2rem 1.5rem 1rem;
         width: 100%;
+        // 0.5 pour jouer sur la transparence
         background-color: rgba(0, 0, 0, 0.5);
+        // Pour l'ordre de la superposition
         z-index: 1;
         color: $font-color-light;
         border-radius: 0 0 $border-radius-s $border-radius-s;
         font-weight: bold;
-    }
-
-    .text {
-        display: flex;
-    }
-
-    .hide {
-        display: none;
     }
 }

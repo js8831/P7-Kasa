@@ -1,8 +1,9 @@
-@import './../../assets/scss/variables.scss';
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
 
 .main {
     /* position: relative; */
-    margin: 43px 100px;
+    margin: 43px 5%;
     padding: 26px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -10,12 +11,10 @@
     background-color: $color-secondary;
     border-radius: 10px;
 
-    /* @include breakpoint(l) {
-        border-radius: $border-radius-lg;
-        background-color: $background-tiles;
-        margin: 1.5rem 0;
-        padding: 0.5rem 1rem 1rem 1rem;
-        width: calc(100% - 2rem);
+    /* @include media-query(s) {
+        background-color: white;
+        padding: 0px 20px;
+        margin: 0px 5%;
     } */
 
     .article-link {

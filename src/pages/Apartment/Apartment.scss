@@ -1,5 +1,5 @@
-@import './../../assets/scss/variables.scss';
-@import './../../assets/scss/mixins.scss';
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
 
 .apartment {
     margin: 0 5%;
@@ -62,7 +62,7 @@
         margin: 0;
     }
 
-    /* &__dropdowns {
+    &__dropdowns {
         @include media-query(m) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -72,5 +72,8 @@
         @include media-query(l) {
             column-gap: 80px;
         }
-    } */
+        &__list {
+            padding-bottom: 5px;
+        }
+    }
 }

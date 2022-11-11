@@ -1,4 +1,5 @@
-@import "../../assets/scss/variables.scss";
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
 
 .wrapper-error {
     margin-top: 2rem;
@@ -8,15 +9,15 @@
     text-align: center;
     padding: 10rem 0;
 
-    /* @include breakpoint(xl) {
+    /* @include media-query(xl) {
         margin-top: 4rem;
     } */
 
     &__number {
         font-weight: bold;
-        font-size: 5rem;
+        font-size: 10rem;
 
-        /* @include breakpoint(xl) {
+        /* @include media-query(xl) {
             font-size: 8rem;
         } */
     }
@@ -25,7 +26,7 @@
         margin: 1rem 0 5rem 0;
         font-weight: 500;
 
-        /* @include breakpoint(xl) {
+        /* @include media-query(xl) {
             margin: 1rem 0 5rem 0;
             font-size: 1.5rem;
         } */

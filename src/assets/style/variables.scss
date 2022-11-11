@@ -1,0 +1,26 @@
+// Les couleurs
+$color-primary: #FF6060;
+$color-secondary: #F6F6F6;
+$color-tertiary: #000;
+
+// Les fonts
+$font-size-base: 1rem;
+$font-color-light: #FFF;
+$font-color-dark: #000;
+
+// Les breakpoint pour le responsive design
+$breakpoints: (
+        s: "320px",
+        m: "768px",
+        l: "992px",
+        xl: "1024px",
+        xxl: "1490px"
+);
+
+
+// Les layout margin
+$layout-margin : 2.5rem 1.5rem;
+$border-radius-xs : 5px;
+$border-radius-s : 10px;
+$border-radius-lg : 25px;
+$background-tiles : white;

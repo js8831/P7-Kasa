@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+// Les mixins permettent de réutiliser des blocs de code contrairement aux variables qui stockent seulement des valeurs
+// En renseignant la clé on obtient la "size" qui correspondant au breakpoint correspondant
+@mixin media-query($key) {
+    $size: map-get($breakpoints, $key);
+
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}

@@ -11,25 +11,19 @@ import Slider from "../../components/Slider/Slider";
 import ApartmentTag from "../../components/ApartmentTag/ApartmentTag";
 import Collapse from "../../components/Collapse/Collapse";
 import Rate from "./../../components/Rate/Rate";
-import HostName from "./../../components/HostName/HostName"
+import HostName from "./../../components/HostName/HostName";
 
 // Le composant fonction parent qui appelle les composants fonction enfants
-export default function Apartment() {
-
+function Apartment() {
   // On récupere l'id dans la constante "productId"
   const { productId } = useParams();
 
   // On mappe "data" pour récup l'appartement (et ses caractéristiques) qui a pour id celui renseigné dans les paramètres d'url
   const apartment = data.find((apartment) => apartment.id === productId);
-  
-  // ??????????????????  
-  const {
-    title,
-    location,
-    rating, host, equipments, description, pictures,
-  } = apartment;
-  
-  console.log(title, apartment);
+
+  //
+  const { title, location, rating, host, equipments, description, pictures } =
+    apartment;
 
   return (
     <section className="apartment">
@@ -40,7 +34,7 @@ export default function Apartment() {
           <p className="apartment__location">{location}</p>
           <div className="apartment__tags">
             {apartment.tags.map((tag, index) => (
-              <ApartmentTag key={index} getTag={tag} /> 
+              <ApartmentTag key={index} getTag={tag} />
             ))}
           </div>
         </div>
@@ -49,10 +43,17 @@ export default function Apartment() {
           <HostName host={host} />
         </div>
       </div>
-     {/*  <div className="apartment__dropdowns">
-             <Collapse title="description" content={description} />
-        <Collapse title="équipement" content={equipments} />
-      </div> */}
+      <div className="apartment__dropdowns">
+        <Collapse title="Description" content={description} />
+        <Collapse
+          title="Equipements"
+          content={equipments.map((equipment, index) => (
+            <li className="apartment__dropdowns__list" key={index}>{equipment}</li>
+          ))}
+        />
+      </div>
     </section>
   );
 }
+
+export default Apartment;

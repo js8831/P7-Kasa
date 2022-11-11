@@ -1,8 +1,9 @@
-@import "./../../assets/scss/variables.scss";
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
 
 .tag {
     background: $color-primary;
-    border-radius: 5px;
+    border-radius: $border-radius-xs;
     color: $color-secondary;
     padding: 3px 10px;
     margin-right: 10px;
@@ -10,12 +11,12 @@
     min-width: 68px;
     text-align: center;
 
-    /* @include media-query(small) {
+    /* @include media-query(s) {
         padding: 4px 12px;
         border-radius: 7px;
     }
 
-    @include media-query(large) {
+    @include media-query(l) {
         padding: 5px 14px;
         border-radius: 10px;
     } */
@@ -25,11 +26,11 @@
         font-size: 10px;
         font-weight: 500;
 
-        /* @include media-query(small) {
+        /* @include media-query(s) {
             font-size: 12px;
         }
 
-        @include media-query(large) {
+        @include media-query(l) {
             font-size: 14px;
         } */
     }

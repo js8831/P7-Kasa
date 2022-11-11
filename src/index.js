@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./normalize.css";
+import "./assets/style/normalize.css";
 import "./index.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";

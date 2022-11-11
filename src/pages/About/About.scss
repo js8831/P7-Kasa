@@ -1,0 +1,10 @@
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixins.scss';
+
+.about {
+    &__dropdowns {
+        margin: 31px auto;
+        width: 80%;
+        color: $color-primary;
+    }
+}
