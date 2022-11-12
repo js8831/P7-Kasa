@@ -10,8 +10,10 @@ function About() {
     <div className="about">
       <Banner picture={imgBanner} />
       <div className="about__dropdowns">
-        {aboutData.map((data) => {
-          return <Collapse title={data.title} content={data.content} />;
+        {aboutData.map((data, index) => {
+          return (
+            <Collapse key={index} title={data.title} content={data.content} />
+          );
         })}
       </div>
     </div>
