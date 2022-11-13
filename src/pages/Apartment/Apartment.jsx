@@ -21,7 +21,7 @@ function Apartment() {
   // On mappe "data" pour récup l'appartement (et ses caractéristiques) qui a pour id celui renseigné dans les paramètres d'url
   const apartment = data.find((apartment) => apartment.id === productId);
 
-  //
+  // Destructuration :  permet directement de déclarer une variable et de lui assigner la valeur d'une propriété d'un objet
   const { title, location, rating, host, equipments, description, pictures } =
     apartment;
 
@@ -48,7 +48,9 @@ function Apartment() {
         <Collapse
           title="Equipements"
           content={equipments.map((equipment, index) => (
-            <li className="apartment__dropdowns__list" key={index}>{equipment}</li>
+            <li className="apartment__dropdowns__list" key={index}>
+              {equipment}
+            </li>
           ))}
         />
       </div>

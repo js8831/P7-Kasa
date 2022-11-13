@@ -1,7 +1,7 @@
 @import "./../../assets/style/variables.scss";
 
 .header {
-  margin: 0 100px;
+  margin: 0 100px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,6 +40,7 @@
 
       &::after {
         content: "";
+        // Pour le soulignement
         position: absolute;
         width: 100%;
         bottom: 0;

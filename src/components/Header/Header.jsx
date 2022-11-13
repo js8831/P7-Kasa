@@ -18,6 +18,8 @@ function Header() {
           A propos
         </Link>
       </nav>
+      {/* Un <Outlet> rend n'importe quelle route enfant actuellement active.
+      C'est comme un espace réservé pour les routes enfants définies ci-dessus. */}
       <Outlet />
     </header>
   );

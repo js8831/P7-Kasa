@@ -1,8 +1,9 @@
 import "./HostName.scss";
 
 function HostName({ host }) {
+  // On split autour des espaces
   const hostSplitName = host.name.split(" ");
-  //  ????? Dans l'array hostSplitName il y a deux string, le premier sera le name et l'autre le lastname
+  // Dans l'array retourné "hostSplitName", il y a deux string : le premier sera le name et l'autre le lastname
   const [name, lastname] = hostSplitName;
 
   return (
