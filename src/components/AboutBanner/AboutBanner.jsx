@@ -1,7 +1,7 @@
 import "./AboutBanner.scss";
 
-// En paramètre on met les props qu'on utilise dans la fct et qui sont utilisés dans le parent "Home"
-function AboutBanner({ title, picture }) {
+// En paramètre on met la prop qu'on utilise dans la fct et qui est utilisée dans le parent "About"
+function AboutBanner({ picture }) {
   return (
     <div className="wrapper-banner">
       <img
@@ -9,9 +9,7 @@ function AboutBanner({ title, picture }) {
         src={picture}
         alt="Paysage montagneux"
       />
-      <div className="wrapper-banner__background">
-        <div className="wrapper-banner__title">{title}</div>
-      </div>
+      <div className="wrapper-banner__background"></div>
     </div>
   );
 }
