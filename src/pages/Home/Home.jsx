@@ -21,7 +21,7 @@ function Home() {
       <Banner title={bannerTitle} picture={bannerImg} />
       <main className="main">
         {data.map((apartment) => {
-          /* return generera les liens contenant les cartes */
+          /* return generera les liens de redirection des cartes */
           return (
             <Link
               className="main__link"
@@ -32,7 +32,7 @@ function Home() {
               title={apartment.title}
             >
               {/* le spread operator pour récup toutes les données de chaque appartement mappé.
-              Dans le le composant ci-dessous on récupère seulement le "cover" et le "title" */}
+              Dans le le composant ci-dessous on récupère seulement le "cover" et le "title" mais ça fait plus court */}
               <ApartmentCard {...apartment} />
             </Link>
           );
